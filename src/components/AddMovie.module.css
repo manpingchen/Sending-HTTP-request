@@ -1,0 +1,21 @@
+.control {
+  display: flex;
+  flex-direction: column;
+}
+
+.control label {
+  font-size: 0.875rem;
+  color: #333;
+}
+
+.control input,
+.control textarea {
+  margin: 0.5rem 0 2rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid #aaa;
+}
+
+.control textarea {
+  min-height: 200px;
+}
