@@ -79,15 +79,17 @@ function App() {
   }
 
   return (
-    <React.Fragment>
-      <section>
-        <AddMovie onAddMovie={AddMovieHandler} />
+    <div className="flex">
+      <section className="flex add-movie-section">
+        <div className="add-movie-form">
+          <AddMovie onAddMovie={AddMovieHandler} />
+        </div>
       </section>
-      <section>
+      <section className="flex-grow-4">
         <button onClick={fetchMoviesHandlers}>Fetch Movies</button>
+        {content}
       </section>
-      <section>{content}</section>
-    </React.Fragment>
+    </div>
   );
 }
 

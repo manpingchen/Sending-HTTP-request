@@ -1,11 +1,8 @@
 section {
-  margin: 1rem auto;
-  width: 90%;
-  max-width: 40rem;
   text-align: center;
   background-color: white;
-  padding: 2rem;
-  border-radius: 12px;
+  position: relative;
+  margin: 2rem;
 }
 
 button {
@@ -26,4 +23,34 @@ button:hover,
 button:active {
   background-color: #680517;
   border-color: #680517;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.add-movie-section {
+  height: 100vh;
+  margin: 0px 50px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: sticky;
+  top: 80px;
+}
+
+.add-movie-form {
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.flex-grow-4 {
+  flex-grow: 4;
 }
